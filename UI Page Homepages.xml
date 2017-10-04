@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-10-02 20:33:02">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>UI Page Homepages</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>84447f31db61030059d0d001cf9619ad</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>jdeluna</sys_created_by>
+<sys_created_on>2017-10-02 20:33:02</sys_created_on>
+<sys_id>99cafb35db61030059d0d001cf96194d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jdeluna</sys_updated_by>
+<sys_updated_on>2017-10-02 20:33:02</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_widgets_e354ff31db61030059d0d001cf961963</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_widgets"&gt;&lt;sys_widgets action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;name&gt;UI Page Homepages&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;renderer/&gt;&lt;renderer_type&gt;javascript&lt;/renderer_type&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[function sections() {
+    return {
+		//exmaple 'Title for widget instance': {'what type of widget, in this case uiPageName':'Name of actual UI page'}
+        //example 'SNOW Admin Homepage': { 'uiPageName' : 'UI_page_homepage_admin'}
+		//,'widget_name2': {'uiPageName': 'UI_page_name'}
+    };
+}
+
+function render() {
+    var uiPageName = renderer.getPreferences().get("uiPageName");
+    return renderer.getRenderedPage(uiPageName);
+}
+
+function getEditLink() {
+    return "sys_ui_page.do?sysparm_query=name=" + renderer.getPreferences().get("uiPageName");
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_widgets&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jdeluna&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-10-02 20:06:59&lt;/sys_created_on&gt;&lt;sys_id&gt;e354ff31db61030059d0d001cf961963&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;UI Page Homepages&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_widgets_e354ff31db61030059d0d001cf961963&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jdeluna&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-10-02 20:06:59&lt;/sys_updated_on&gt;&lt;top_level_category&gt;false&lt;/top_level_category&gt;&lt;/sys_widgets&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-748574215</payload_hash>
+<remote_update_set display_value="UI Page Homepages">99cafb35db61030059d0d001cf96194d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jdeluna</sys_created_by>
+<sys_created_on>2017-10-02 20:33:02</sys_created_on>
+<sys_id>9dcafb35db61030059d0d001cf96194d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15edeb2e3bf0000001</sys_recorded_at>
+<sys_updated_by>jdeluna</sys_updated_by>
+<sys_updated_on>2017-10-02 20:33:02</sys_updated_on>
+<table/>
+<target_name>UI Page Homepages</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>37c4ff31d5610300478ebaf4e33a0268</update_guid>
+<update_guid_history>37c4ff31d5610300478ebaf4e33a0268:-748574215</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
